@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+    background-color: #ffffff;
+    color: #000000; 
+}
+
+.header h1 {
+    text-transform: uppercase;
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+.image-container {
+    clip-path: circle(50% at 50% 50%);
+    background-size: cover;
+    background-position: center;
+    margin: 2rem auto;
+    height: 0; 
+    padding-top: 100%; 
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navigation ul li {
+    border: 1px solid black;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin: 1rem 0.5rem;
+}
+
+.main-container {
+    margin: 2rem auto;
+}
+
+.main-container div {
+    margin-bottom: 2rem;
+}
+
+.main-container h1 {
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+}
+
+.main-container p {
+    text-align: justify;
+    padding: 0 1rem;
+    font-size: 1rem;
+}
+
+.footer {
+    font-size: 1.5rem;
+    padding: 2rem 0;
+}
+
+.footer ul {
+    list-style: none;
+    margin-bottom: 1rem;
+    padding: 0;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+.footer ul a {
+    color: #141413;
+    text-decoration: none;
+}
+
+/* Alla 480px ekraanid */
+@media (max-width: 480px) {
+    .container {
+        background-color: #ffdddd; 
+        color: #484747; 
+    }
+
+    .image-container {
+        background-image: url('../img/profile2.jpg');
+    }
+
+    .navigation ul li {
+        display: block;
+        font-size: 1rem;
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+
+    .main-container h1 {
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .main-container p {
+        font-size: 0.9rem;
+    }
+
+    .footer {
+        font-size: 1rem;
+    }
+}
+
+/* 481px kuni 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+    .container {
+        background-color: #e7ea8f; 
+        color: #444444; 
+    }
+
+    .image-container {
+        background-image: url('../img/profile1.jpg'); 
+    }
+}
+
+/* 769px kuni 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        background-color: #5a4831; 
+        color: #030303; 
+    }
+
+    .image-container {
+        background-image: url('../img/profile3.jpg'); 
+    }
+}
+
+/* 1025px ja suurematel ekraanidel */
+@media (min-width: 1025px) {
+    .container {
+        background-color: #65a6ac; 
+        color: #171616;
+    }
+
+    .image-container {
+        background-image: url('../img/profile4.jpg');
+    }
+
+    .header h1 {
+        margin: 3rem auto;
+        font-size: 2.5rem;
+    }
+
+    .navigation ul li {
+        display: inline-block;
+        font-size: 1.75rem;
+        margin: 1rem;
+    }
+
+    .main-container h1 {
+        font-size: 2.25rem;
+    }
+
+    .main-container p {
+        font-size: 1.25rem;
+    }
+
+    .footer {
+        font-size: 1rem;
+    }
+}
